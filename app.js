@@ -9,6 +9,9 @@ const app = express();
 app.use(express.json());
 connectDB();
 
+app.get("/", (req, res) => {
+    res.send("Welcome! Node API is running 🚀");
+});
 
 app.use("/api/users", userRoutes);
 app.use("/api/blogs", blogRoutes);
