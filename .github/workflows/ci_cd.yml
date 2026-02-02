@@ -42,3 +42,5 @@ jobs:
               -p 8000:8000 \
               --env-file .env \
               nisha783876/node_api:latest
+
+              
